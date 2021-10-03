@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap");
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        }
+        
+        
+        body {
+        font-family: "Exo 2", sans-serif;
+        width: 100vw; /*vw is the relative measurement according to the window size of different*/
+        height: 100vh;
+        background: url("https://i1.faceprep.in/ProGrad/sky-moon-bg.png");
+        background-size: 100%; /*t r b l*/
+        }
+        #astronaut1 {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 500px;
+            animation: floating 5s infinite ease-in-out; /*infinte -> to repeat continuously, one of the effects*/
+            }
+            
+            #astronaut2 {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            height: 425px;
+            animation: floating 4s infinite ease-in-out;
+            }
+            
+            form {
+            position: absolute;
+            top: 15%;
+            left: 65%;
+            width: 450px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 0px 75px;
+            }
+            
+            .block-display {
+            display: block;
+            }
+            
+            label {
+            font-size: 16px;
+            margin: 20px 0px 4px 0px;
+            }
+            
+            input[type="text"],
+            input[type="number"],
+            select {
+            width: 300px;
+            height: 40px;
+            border: 1px solid gray;
+            padding: 0 5px;
+            }
+            
+            .rent-label {
+            margin-right: 20px;
+            }
+            
+            #button {
+            display: block;
+            border-radius: 20px;
+            background-color: #ec7920;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            margin: 40px auto;
+            }
+            
+            h1 {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 1.6em;
+            width: 280px;
+            }
+            
+            @keyframes floating {
+            0% {
+            transform: translateY(0px);
+            }
+            
+            50% {
+            transform: translateY(30px);
+            }
+            
+            100% {
+            transform: translateY(0px);
+            }
+            }
